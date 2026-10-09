@@ -16,6 +16,9 @@
         <item name="android:windowBackground">@drawable/bg_splash</item>
     </style>
 
+    <!-- Base style: the "Harsh.*" component styles below inherit from this. -->
+    <style name="Harsh" />
+
     <!-- Top bar icon button -->
     <style name="Harsh.TopBarButton">
         <item name="android:layout_width">44dp</item>
