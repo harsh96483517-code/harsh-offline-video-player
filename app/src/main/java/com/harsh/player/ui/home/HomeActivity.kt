@@ -27,6 +27,7 @@ import com.harsh.player.ui.player.PlayerActivity
 import com.harsh.player.ui.settings.SettingsActivity
 import com.harsh.player.util.DeviceCapabilities
 import com.harsh.player.util.Formatters
+import kotlinx.coroutines.launch
 
 /**
  * HARSH home screen. Sidebar + shelves of local videos. Everything here is
@@ -72,10 +73,12 @@ class HomeActivity : AppCompatActivity() {
         setupTopBar()
         showStorageInfo()
 
-        vm.state.observe(this) { state ->
-            b.progress.visibility = if (state.loading) View.VISIBLE else View.GONE
-            shelfAdapter.submit(state.shelves)
-            b.emptyState.visibility = if (!state.loading && state.empty) View.VISIBLE else View.GONE
+        lifecycleScope.launch {
+            vm.state.collect { state ->
+                b.progress.visibility = if (state.loading) View.VISIBLE else View.GONE
+                shelfAdapter.submit(state.shelves)
+                b.emptyState.visibility = if (!state.loading && state.empty) View.VISIBLE else View.GONE
+            }
         }
 
         ensurePermissions()

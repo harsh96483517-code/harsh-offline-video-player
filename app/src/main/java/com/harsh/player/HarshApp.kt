@@ -3,6 +3,8 @@ package com.harsh.player
 import android.app.Application
 import coil.ImageLoader
 import coil.ImageLoaderFactory
+import coil.disk.DiskCache
+import coil.memory.MemoryCache
 import com.harsh.player.util.DeviceCapabilities
 
 /**
@@ -29,15 +31,17 @@ class HarshApp : Application(), ImageLoaderFactory {
         val memCacheMb = if (lowRam) 4 else 12
         val diskCacheMb = if (lowRam) 24 else 64
         return ImageLoader.Builder(this)
-            .memoryCache {
-                // Receiver is MemoryCache.Builder — set the cap directly.
-                maxSizeBytes(memCacheMb * 1024L * 1024L)
-            }
-            .diskCache {
-                // Receiver is DiskCache.Builder.
-                directory(cacheDir.resolve("thumbnails"))
-                maxSizeBytes(diskCacheMb * 1024L * 1024L)
-            }
+            .memoryCache(
+                MemoryCache.Builder(this)
+                    .maxSizeBytes(memCacheMb * 1024L * 1024L)
+                    .build()
+            )
+            .diskCache(
+                DiskCache.Builder()
+                    .directory(cacheDir.resolve("thumbnails"))
+                    .maxSizeBytes(diskCacheMb * 1024L * 1024L)
+                    .build()
+            )
             .crossfade(!lowRam)
             .build()
     }
