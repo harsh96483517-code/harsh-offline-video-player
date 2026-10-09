@@ -33,7 +33,7 @@ class HarshApp : Application(), ImageLoaderFactory {
         return ImageLoader.Builder(this)
             .memoryCache(
                 MemoryCache.Builder(this)
-                    .maxSizeBytes(memCacheMb * 1024L * 1024L)
+                    .maxSizeBytes(memCacheMb * 1024 * 1024)
                     .build()
             )
             .diskCache(
