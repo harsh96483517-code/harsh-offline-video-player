@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Blue hexagon plate -->
+    <path
+        android:fillColor="#5B8DEF"
+        android:pathData="M24,3 L42,13 L42,35 L24,45 L6,35 L6,13 Z" />
+    <!-- Violet inner plate -->
+    <path
+        android:fillColor="#3B5FD9"
+        android:pathData="M24,8 L37,15.5 L37,32.5 L24,40 L11,32.5 L11,15.5 Z" />
+    <!-- Crown accent -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18,12 L21,16 L24,11 L27,16 L30,12 L30,17 L18,17 Z" />
+    <!-- Play triangle -->
+    <path
+        android:fillColor="#F4F7FF"
+        android:pathData="M21,21 L31,27 L21,33 Z" />
+</vector>

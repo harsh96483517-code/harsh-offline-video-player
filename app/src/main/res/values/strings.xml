@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HARSH Offline Video Player</string>
+    <string name="app_subtitle">OFFLINE VIDEO PLAYER</string>
+    <string name="brand_harsh">HARSH</string>
+    <string name="brand_signature">ALIVE HARSH</string>
+    <string name="brand_tagline">PLAY • WATCH • ENJOY</string>
+
+    <string name="offline_mode">OFFLINE MODE — NO INTERNET REQUIRED</string>
+    <string name="storage_info">Storage: %1$s free of %2$s</string>
+
+    <!-- Navigation -->
+    <string name="nav_search">Search</string>
+    <string name="nav_folders">Folders</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_series">Series</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_recent">Recently Played</string>
+    <string name="nav_all_videos">All Videos</string>
+    <string name="nav_about">About HARSH</string>
+    <string name="folders">Folders</string>
+
+    <!-- Empty state -->
+    <string name="empty_title">No videos found</string>
+    <string name="empty_message">Pick a folder or connect a USB drive to add your videos.</string>
+
+    <!-- Search -->
+    <string name="search_title">Search videos</string>
+    <string name="search_hint">Type a filename…</string>
+    <string name="sort_by">Sort by</string>
+
+    <!-- Generic actions -->
+    <string name="action_search">Search</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_later">Later</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_close">Close</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_play_pause">Play or pause</string>
+    <string name="action_prev">Previous video</string>
+    <string name="action_next">Next video</string>
+    <string name="action_forward10">Forward 10 seconds</string>
+    <string name="action_back10">Back 10 seconds</string>
+
+    <!-- Permissions -->
+    <string name="perm_title">Storage access needed</string>
+    <string name="perm_message">HARSH needs access to your videos so it can list and play the files already on this device. Nothing is uploaded — the app has no internet permission.</string>
+
+    <!-- Player -->
+    <string name="player_settings">Playback settings</string>
+    <string name="opt_speed">Playback speed</string>
+    <string name="opt_audio">Audio track</string>
+    <string name="opt_subtitles">Subtitles</string>
+    <string name="opt_aspect">Aspect ratio</string>
+    <string name="opt_info">Video information</string>
+    <string name="no_audio_tracks">No alternate audio tracks</string>
+
+    <!-- Info fields -->
+    <string name="field_title">Title</string>
+    <string name="field_resolution">Resolution</string>
+    <string name="field_duration">Duration</string>
+    <string name="field_size">Size</string>
+    <string name="field_source">Source</string>
+    <string name="field_path">Path</string>
+    <string name="field_thumbnail">Video thumbnail</string>
+
+    <!-- Errors -->
+    <string name="error_title">Can\'t play this video</string>
+    <string name="error_decoder">This device\'s decoder could not open the video or audio codec. The file may use a format this TV does not support.</string>
+    <string name="error_missing_file">The file could not be found. It may have been moved, renamed, or the storage may have been disconnected.</string>
+    <string name="error_permission">Access to this file was denied. Try picking the folder again or check storage permissions.</string>
+    <string name="error_generic">Playback failed. The file may be damaged or unsupported on this device.</string>
+
+    <!-- Settings -->
+    <string name="set_resume">Resume playback from last position</string>
+    <string name="set_auto_hide">Auto-hide player controls</string>
+    <string name="set_subtitle_size">Subtitle size</string>
+    <string name="set_low_ram">LOW-RAM MODE</string>
+    <string name="set_low_ram_note">Recommended on this device</string>
+    <string name="set_clear_history">Clear playback history</string>
+    <string name="set_clear_cache">Clear thumbnail cache</string>
+    <string name="set_permissions">Storage permissions</string>
+    <string name="history_cleared">Playback history cleared</string>
+    <string name="cache_cleared">Thumbnail cache cleared</string>
+    <string name="subtitle_size_value">Subtitle size: %1$d sp</string>
+    <string name="device_info">%1$s · %2$d MB RAM</string>
+
+    <!-- About -->
+    <string name="about_version">Version %1$s (build %2$d)</string>
+    <string name="about_body">A premium, lightweight offline video player built for low-end Android TVs.\nNo accounts. No tracking. No internet required.</string>
+</resources>

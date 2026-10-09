@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/harsh_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_settings"
+            android:textColor="@color/harsh_white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/deviceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/harsh_text_dim"
+            android:textSize="13sp" />
+
+        <!-- Resume -->
+        <LinearLayout style="@style/Harsh.SettingRow">
+            <TextView style="@style/Harsh.SettingLabel" android:text="@string/set_resume" />
+            <Switch
+                android:id="@+id/switchResume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Auto-hide controls -->
+        <LinearLayout style="@style/Harsh.SettingRow">
+            <TextView style="@style/Harsh.SettingLabel" android:text="@string/set_auto_hide" />
+            <Switch
+                android:id="@+id/switchAutoHide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Subtitle size -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subtitleSizeLabel"
+                style="@style/Harsh.SettingLabel"
+                android:text="@string/set_subtitle_size" />
+
+            <SeekBar
+                android:id="@+id/seekSubtitleSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Low RAM mode -->
+        <LinearLayout style="@style/Harsh.SettingRow">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView style="@style/Harsh.SettingLabel" android:text="@string/set_low_ram" />
+                <TextView
+                    android:id="@+id/lowRamNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_low_ram_note"
+                    android:textColor="@color/harsh_blue"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/switchLowRam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <View style="@style/Harsh.Divider" />
+
+        <TextView
+            android:id="@+id/rowClearHistory"
+            style="@style/Harsh.ActionRow"
+            android:text="@string/set_clear_history" />
+
+        <TextView
+            android:id="@+id/rowClearCache"
+            style="@style/Harsh.ActionRow"
+            android:text="@string/set_clear_cache" />
+
+        <TextView
+            android:id="@+id/rowPermissions"
+            style="@style/Harsh.ActionRow"
+            android:text="@string/set_permissions" />
+
+        <TextView
+            android:id="@+id/rowAbout"
+            style="@style/Harsh.ActionRow"
+            android:text="@string/nav_about" />
+
+    </LinearLayout>
+
+</ScrollView>

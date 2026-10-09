@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="harsh_black">#FF05060A</color>
+    <color name="harsh_surface">#FF0E1117</color>
+    <color name="harsh_surface_2">#FF141925</color>
+    <color name="harsh_glass">#33FFFFFF</color>
+    <color name="harsh_border">#33FFFFFF</color>
+    <color name="harsh_white">#FFF4F7FF</color>
+    <color name="harsh_text_dim">#FF9AA4B8</color>
+    <color name="harsh_blue">#FF5B8DEF</color>
+    <color name="harsh_violet">#FF8B5CF6</color>
+    <color name="harsh_green">#FF3DD68C</color>
+    <color name="harsh_focus">#66FFFFFF</color>
+    <color name="harsh_scrim">#99000000</color>
+    <color name="transparent">#00000000</color>
+</resources>
